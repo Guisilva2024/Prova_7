@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciador de Nomes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label, input, button {
+      display: block;
+      margin: 10px 0;
+    }
+    #resultado {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-height: 100px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gerenciador de Lista de Nomes</h1>
+
+  <label for="nomeInput">Nome:</label>
+  <input type="text" id="nomeInput" placeholder="Digite um nome ou letra..." />
+
+  <button onclick="adicionarNome()">Adicionar Nome</button>
+  <button onclick="filtrarNomes()">Filtrar por Letra</button>
+  <button onclick="buscarNome()">Buscar Nome</button>
+  <button onclick="transformarNomes()">Transformar em Maiúsculas</button>
+  <button onclick="verificarNomes()">Verificar +3 Caracteres</button>
+  <button onclick="mostrarLista()">Mostrar Lista Completa</button>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
